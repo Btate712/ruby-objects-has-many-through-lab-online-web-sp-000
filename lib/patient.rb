@@ -24,7 +24,7 @@ class Patient
     end
     doctors_array
   end
-  
+
   def self.all
     @@all
   end
