@@ -16,6 +16,6 @@ class Artist
   end
 
   def songs
-    Song.all.find_all { |song| song.artist = self }
+    Song.all.find_all { |song| song.artist == self }
   end
 end
