@@ -21,7 +21,6 @@ class Doctor
   def patients
     patients_array = []
     Appointment.all.each do |appointment|
-      binding.pry
       if appointment.doctor == self
         patients_array << appointment.patient
       end
