@@ -20,6 +20,9 @@ class Artist
   end
 
   def genres
-    Song.all.select { |song| song.genre == self }
+    genres_array = []
+    Song.all.each do |song| 
+      genres_array << song.genre if song.genre == self 
+    end
   end
 end
