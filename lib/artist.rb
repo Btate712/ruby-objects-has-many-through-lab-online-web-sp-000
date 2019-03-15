@@ -24,5 +24,6 @@ class Artist
     Song.all.each do |song|
       genres_array << song.genre if song.genre == self
     end
+    genres_array
   end
 end
