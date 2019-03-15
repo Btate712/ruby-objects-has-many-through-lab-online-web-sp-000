@@ -2,7 +2,7 @@ class Artist
   attr_reader :name
   @@all = []
 
-  def .all
+  def all
     @@all
   end
 
