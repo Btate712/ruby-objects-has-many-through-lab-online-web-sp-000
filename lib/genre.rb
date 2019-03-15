@@ -1,6 +1,6 @@
 class Genre
   @@all = []
-  
+
   attr_reader :name
 
   def initialize(name)
@@ -12,6 +12,6 @@ class Genre
   end
 
   def self.all
-    @@all 
+    @@all
   end
 end
