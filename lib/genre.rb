@@ -1,4 +1,6 @@
 class Genre
+  @@all = []
+  
   attr_reader :name
 
   def initialize(name)
@@ -7,5 +9,9 @@ class Genre
 
   def songs
     Song.all.select { |song| song.genre == self }
+  end
+
+  def self.all
+    @@all 
   end
 end
